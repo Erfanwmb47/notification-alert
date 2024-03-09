@@ -12,8 +12,8 @@ class NotificationAlertProvider extends ServiceProvider
             return new NotificationAlertService();
         });
 
-        $this->mergeConfigFrom(__DIR__.'\\..\\config\captcha.php','notification-alert');
-        
+        $this->mergeConfigFrom(__DIR__.'\\..\\config\notification-alert.php','notification-alert');
+
     }
 
     public function boot(): void
