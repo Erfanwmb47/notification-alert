@@ -14,7 +14,7 @@
         toastr.success("{!! $toast['message'] !!}", "{!! $toast['title'] !!}");
         @elseif($toast['type'] == 'warning')
         toastr.warning("{!! $toast['message'] !!}", "{!! $toast['title'] !!}");
-        @elseif($toast['type'] == 'information')
+        @elseif($toast['type'] == 'info')
         toastr.info("{!! $toast['message'] !!}", "{!! $toast['title'] !!}");
         @elseif($toast['type'] == 'error')
         toastr.error("{!! $toast['message'] !!}", "{!! $toast['title'] !!}");

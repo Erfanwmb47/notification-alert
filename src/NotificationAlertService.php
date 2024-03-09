@@ -60,7 +60,7 @@ class NotificationAlertService
      * @param string|null $message
      * @return void
      */
-    public static  function danger(string $title=null, string $message=null) : void
+    public static  function error(string $title=null, string $message=null) : void
     {
         Session::flash('notification-alert',[
             'type'      => 'danger',
