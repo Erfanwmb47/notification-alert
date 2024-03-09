@@ -34,7 +34,7 @@ return [
         'debug'             => false,
         'newestOnTop'       => true,
         'progressBar'       => true,
-        'positionClass'     => 'toast-bottom-right',
+        'positionClass'     => 'toast-bottom-left',
         'preventDuplicates' => false,
         'showDuration'      => '300',
         'hideDuration'      => '1000',
