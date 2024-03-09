@@ -5,40 +5,12 @@ namespace erfanwmb\notificationAlert;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static string toast()
- * @param string $type
- * @param string|null $title
- * @param string|null $message
- * @return void
+ * @method static string info(string $title = null, string $message = null, string $mode = null)
+ * @method static string warning(string $title = null, string $message = null, string $mode = null)
+ * @method static string error(string $title = null, string $message = null, string $mode = null)
+ * @method static string success(string $title = null, string $message = null, string $mode = null)
  **/
 
-/**
- * @method static string info()
- * @param string|null $title
- * @param string|null $message
- * @return void
-**/
-
-/**
- * @method static string warning()
- * @param string|null $title
- * @param string|null $message
- * @return void
- **/
-
-/**
- * @method static string error()
- * @param string|null $title
- * @param string|null $message
- * @return void
- **/
-
-/**
- * @method static string success()
- * @param string|null $title
- * @param string|null $message
- * @return void
- */
 
 class NotificationAlert extends Facade
 
