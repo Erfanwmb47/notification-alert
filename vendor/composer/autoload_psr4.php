@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'erfanwmb\\notification-alert\\' => array($baseDir . '/src'),
+    'erfanwmb\\notificationAlert\\' => array($baseDir . '/src'),
 );

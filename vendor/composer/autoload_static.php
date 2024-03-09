@@ -9,12 +9,12 @@ class ComposerStaticInit58b4a3c443674c6cd30d89b86b426cb7
     public static $prefixLengthsPsr4 = array (
         'e' => 
         array (
-            'erfanwmb\\notification-alert\\' => 28,
+            'erfanwmb\\notificationAlert\\' => 27,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'erfanwmb\\notification-alert\\' => 
+        'erfanwmb\\notificationAlert\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
