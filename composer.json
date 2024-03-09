@@ -11,7 +11,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "erfanwmb\\notification-alert\\" : "src/"
+            "erfanwmb\\notificationAlert\\" : "src/"
         }
     },
     "require": {
@@ -22,10 +22,10 @@
 
         "laravel": {
             "providers": [
-                "erfanwmb\\notification-alert\\NotificationAlertProvider"
+                "erfanwmb\\notificationAlert\\NotificationAlertProvider"
             ],
             "aliases": {
-                "notificationAlert": "erfanwmb\\notification-alert\\NotificationAlertFacade"
+                "notificationAlert": "NAlert"
             }
         }
     }
