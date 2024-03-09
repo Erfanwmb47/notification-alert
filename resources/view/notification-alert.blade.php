@@ -3,21 +3,24 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
-@php($toast = Session::get('notification-alert'))
+@php($toasts = Session::get('notification-alert'))
 
-@if(isset($toast) && $toast['mode']=='toastr')
-    <script type="text/javascript">
-        toastr.options = "{{config('notification-alert.toaster')}}"
-    </script>
-    <script type="text/javascript">
-        @if($toast['type'] == 'success')
-        toastr.success("{!! $toast['message'] !!}", "{!! $toast['title'] !!}");
-        @elseif($toast['type'] == 'warning')
-        toastr.warning("{!! $toast['message'] !!}", "{!! $toast['title'] !!}");
-        @elseif($toast['type'] == 'info')
-        toastr.info("{!! $toast['message'] !!}", "{!! $toast['title'] !!}");
-        @elseif($toast['type'] == 'error')
-        toastr.error("{!! $toast['message'] !!}", "{!! $toast['title'] !!}");
-        @endif
-    </script>
-@endif
+@foreach($toasts as $toast)
+    @if(isset($toast) && $toast['mode']=='toastr')
+        <script type="text/javascript">
+            @php($options=json_encode(config('notification-alert.toastr')))
+                toastr.options = {!! $options !!}
+        </script>
+        <script type="text/javascript">
+            @if($toast['type'] == 'success')
+              toastr.success("{!! $toast['message'] !!}", "{!! $toast['title'] !!}");
+            @elseif($toast['type'] == 'warning')
+              toastr.warning("{!! $toast['message'] !!}", "{!! $toast['title'] !!}");
+            @elseif($toast['type'] == 'info')
+              toastr.info("{!! $toast['message'] !!}", "{!! $toast['title'] !!}");
+            @elseif($toast['type'] == 'error')
+              toastr.error("{!! $toast['message'] !!}", "{!! $toast['title'] !!}");
+            @endif
+        </script>
+    @endif
+@endforeach
