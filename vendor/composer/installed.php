@@ -3,7 +3,7 @@
         'name' => 'erfanwmb/notification-alert',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '4ac8f0cc9018dd20a20081c4c47a86a375d8f0d7',
+        'reference' => '00b47dd6a1da44eca28de617e12ab5a222d4c9d7',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'erfanwmb/notification-alert' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '4ac8f0cc9018dd20a20081c4c47a86a375d8f0d7',
+            'reference' => '00b47dd6a1da44eca28de617e12ab5a222d4c9d7',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

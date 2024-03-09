@@ -18,6 +18,9 @@ class NotificationAlertProvider extends ServiceProvider
 
     public function boot(): void
     {
+        $this->publishes([
+            __DIR__.'\\..\\config\notification-alert.php' => config_path('notification-alert.php'),
+        ],'config');
 
     }
 }
