@@ -50,7 +50,7 @@
                 icon: 'warning',
             })
             @elseif($alert['type'] == 'info')
-            Swal.fire({
+            Swal.({
                 title: "{{ $alert['title'] }}",
                 text: "{{ $alert['message'] }}",
                 icon: 'info',
